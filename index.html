@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>js-imageProc</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="keywords" content="Image processing">
+  <meta name="description" content="Image processing in Javascript">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <link rel="shortcut icon" href="">
+  <link rel="apple-touch-icon" href="">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div class="centering" style="padding: 0;">
+  <h1>js-imageProc</h1>
+  <canvas id="canvas" class="canvas-border" width="640" height="480"></canvas>
+  <div>
+    <button id="btn-start">start</button>
+    <button id="btn-stop">stop</button>
+  </div>
+  <div>
+    <form name="form-imgproc">
+      <p><input type="radio" name="radiobox-imgproc" value="none" checked="checked">None</p>
+      <p><input type="radio" name="radiobox-imgproc" value="grayscale">Grayscale</p>
+      <p><input type="radio" name="radiobox-imgproc" value="np-reverse">Reverse negative-positive</p>
+      <p><input type="radio" name="radiobox-imgproc" value="laplacian">Laplacian filter</p>
+    </form>
+  </div>
+  <script src="js/imageProc.js"></script>
+  <script src="js/index.js"></script>
+</div>
+
+</body>
+</html>
